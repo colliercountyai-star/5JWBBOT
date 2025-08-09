@@ -1,0 +1,48 @@
+{
+  "policies": {
+    "corkage": {
+      "fee": 25,
+      "description": "Corkage is $25 for bottles not on our list with a two bottle maximum per party"
+    },
+    "reservations": {
+      "cancellation_policy": "You have 24 hours to cancel reservations. If cancelled within 24 hours, there is a $25 fee per head",
+      "recommendation": "We always recommend a reservation for the main dining room",
+      "walk_ins": "We do take walk-ins however we always recommend a reservation for the main dining room"
+    },
+    "seating": {
+      "window_requests": "Window requests are taken however NEVER guaranteed as we do get many requests",
+      "special_table": "We have one round table in house that can seat up to 6 guests",
+      "bar_lounge": "Bar and Lounge are always open seating"
+    },
+    "dress_code": {
+      "policy": "No swimwear and no tank tops for men",
+      "description": "Dress code is no swimwear and no tank tops for men"
+    }
+  },
+  "faqs": [
+    {
+      "question": "What is your corkage policy?",
+      "answer": "Corkage is $25 for bottles not on our list with a two bottle maximum per party."
+    },
+    {
+      "question": "What is your cancellation policy?",
+      "answer": "You have 24 hours to cancel reservations. If cancelled within 24 hours, there is a $25 fee per head."
+    },
+    {
+      "question": "Do you take walk-ins?",
+      "answer": "We do take walk-ins however we always recommend a reservation for the main dining room. Bar and Lounge are always open seating."
+    },
+    {
+      "question": "Can I request a window table?",
+      "answer": "Window requests are taken however NEVER guaranteed as we do get many requests."
+    },
+    {
+      "question": "What is your dress code?",
+      "answer": "Dress code is no swimwear and no tank tops for men."
+    },
+    {
+      "question": "Do you have any special seating options?",
+      "answer": "We have one round table in house that can seat up to 6 guests. Bar and Lounge are always open seating."
+    }
+  ]
+}

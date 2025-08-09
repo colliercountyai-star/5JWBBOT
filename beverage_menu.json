@@ -1,0 +1,68 @@
+{
+  "Signature Cocktails": [
+    {
+      "name": "Ridin' In The Slow Lane",
+      "price": 18,
+      "ingredients": "Elijah Craig, Zirbenz Stone Pine Liqueur, Demerara Syrup, Dashfire J Thomas Decanter Bitters",
+      "type": "Whiskey Cocktail"
+    },
+    {
+      "name": "All Right, All Right, All Right",
+      "price": 16,
+      "ingredients": "Wild Turkey Longbranch Bourbon, Giffard Banane Du Brésil, St. Elizabeth Allspice Dram, Demerara Syrup",
+      "type": "Bourbon Cocktail"
+    },
+    {
+      "name": "Pineapple Shuffle",
+      "price": 17,
+      "ingredients": "Saccharum Rye 6yr, Giffard Caribbean Pineapple, Green Chartreuse, Pure Cane Syrup, Lemon & Lime Juices",
+      "type": "Rye Cocktail"
+    },
+    {
+      "name": "The Good Life",
+      "price": 17,
+      "ingredients": "Casamigos Blanco Tequila, Grand Marnier Orange Liqueur, Earl Grey Agave, Lime & Lemon Juices",
+      "type": "Tequila Cocktail"
+    },
+    {
+      "name": "Peace, Love & Agave",
+      "price": 18,
+      "ingredients": "Teremana Reposado Tequila, Dos Hombres Joven Mezcal, Yellow Chartreuse, Agave Nectar, Lemon Juice, Fever Tree Ginger Beer, Mint",
+      "type": "Tequila/Mezcal Cocktail"
+    },
+    {
+      "name": "Tropical Paloma",
+      "price": 16,
+      "ingredients": "Espolòn Blanco Tequila, Giffard Crème De Pamplemousse Rose, Lime Juice, Pineberry, Fever Tree Sparkling Grapefruit Soda",
+      "type": "Tequila Cocktail"
+    },
+    {
+      "name": "Whistling Swan",
+      "price": 18,
+      "ingredients": "Sipsmith London Dry Gin, Pierre Ferrand Dry Curaçao, Giffard Orgeat, Passion Fruit, Lemon Juice, Sparkling Wine",
+      "type": "Gin Cocktail"
+    }
+  ],
+  "Classic Cocktails": [
+    {
+      "name": "JWB Old Fashioned",
+      "price": 16,
+      "ingredients": "Bourbon, demerara, orange bitters",
+      "type": "Whiskey"
+    },
+    {
+      "name": "Gulf Breeze Spritz",
+      "price": 14,
+      "ingredients": "Citrus, Prosecco, sea salt rim",
+      "type": "Spritz"
+    }
+  ],
+  "Beer": [
+    {
+      "name": "Modelo Especial",
+      "price": 6,
+      "type": "Lager",
+      "origin": "Mexico"
+    }
+  ]
+}

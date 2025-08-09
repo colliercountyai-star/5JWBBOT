@@ -1,0 +1,344 @@
+{
+  "Sparkling": [
+    {
+      "name": "La Marca Prosecco",
+      "region": "Italy",
+      "price_glass": 14,
+      "price_bottle": 45,
+      "type": "Sparkling"
+    },
+    {
+      "name": "Domaine Chandon Brut",
+      "region": "Napa Valley",
+      "price_bottle": 85,
+      "type": "Sparkling"
+    },
+    {
+      "name": "Taittinger Brut Reserve",
+      "region": "Reims, France",
+      "price_bottle": 165,
+      "type": "Champagne"
+    },
+    {
+      "name": "Moet & Chandon Imperial Brut",
+      "region": "Epernay, France",
+      "price_bottle": 175,
+      "type": "Champagne"
+    },
+    {
+      "name": "Gosset Grand Reserve",
+      "region": "Champagne, France",
+      "price_bottle": 145,
+      "type": "Champagne"
+    }
+  ],
+  "White": [
+    {
+      "name": "Capasoldo Pinot Grigio",
+      "region": "Della Venezia, Italy",
+      "price_glass": 12,
+      "price_bottle": 48,
+      "type": "White"
+    },
+    {
+      "name": "Pazo Cilleiro Albarino",
+      "region": "Rias Baixas, Spain",
+      "price_bottle": 49,
+      "type": "White"
+    },
+    {
+      "name": "Frenzy Sauvignon Blanc",
+      "region": "New Zealand",
+      "price_bottle": 52,
+      "type": "White"
+    },
+    {
+      "name": "Treana Sauvignon Blanc",
+      "region": "Central Coast California",
+      "price_glass": 12,
+      "price_bottle": 48,
+      "type": "White"
+    },
+    {
+      "name": "Emmolo Sauvignon Blanc",
+      "region": "Napa-Sonoma Counties",
+      "price_bottle": 52,
+      "type": "White"
+    },
+    {
+      "name": "Hubert Brochard Sancerre",
+      "region": "France",
+      "price_glass": 17,
+      "price_bottle": 68,
+      "type": "White"
+    },
+    {
+      "name": "August Kesseler Riesling",
+      "region": "Rheingau, Germany",
+      "price_bottle": 58,
+      "type": "White"
+    },
+    {
+      "name": "Mer Soleil Chardonnay",
+      "region": "Sonoma Coast, California",
+      "price_glass": 15,
+      "price_bottle": 60,
+      "type": "White"
+    },
+    {
+      "name": "Curvaison Estate Chardonnay",
+      "region": "Carneros",
+      "price_glass": 17,
+      "price_bottle": 68,
+      "type": "White"
+    },
+    {
+      "name": "Far Niente Post & Beam Chardonnay",
+      "region": "Carneros",
+      "price_glass": 20,
+      "price_bottle": 80,
+      "type": "White"
+    },
+    {
+      "name": "Domaine Laroche Chablis",
+      "region": "France",
+      "price_bottle": 99,
+      "type": "White"
+    },
+    {
+      "name": "Cakebread Chardonnay",
+      "region": "Napa Valley",
+      "price_bottle": 120,
+      "type": "White"
+    }
+  ],
+  "Rosé": [
+    {
+      "name": "Conundrum White Blend",
+      "region": "California",
+      "price_glass": 12,
+      "price_bottle": 48,
+      "type": "White Blend"
+    },
+    {
+      "name": "Fluer de Mer Rose",
+      "region": "Provence, France",
+      "price_glass": 15,
+      "price_bottle": 60,
+      "type": "Rosé"
+    },
+    {
+      "name": "Whispering Angel Rose",
+      "region": "Provence, France",
+      "price_bottle": 102,
+      "type": "Rosé"
+    }
+  ],
+  "Red": [
+    {
+      "name": "Argyle Bloom House Pinot Noir",
+      "region": "Willamette Valley, Oregon",
+      "price_glass": 17,
+      "price_bottle": 68,
+      "type": "Pinot Noir"
+    },
+    {
+      "name": "Calera Pinot Noir",
+      "region": "Central Coast, California",
+      "price_glass": 18,
+      "price_bottle": 72,
+      "type": "Pinot Noir"
+    },
+    {
+      "name": "En Route Pinot Noir",
+      "region": "Russian River",
+      "price_glass": 27,
+      "price_bottle": 108,
+      "type": "Pinot Noir"
+    },
+    {
+      "name": "Belle Glos Clark & Telephone Pinot Noir",
+      "region": "Santa Maria Valley",
+      "price_bottle": 81,
+      "type": "Pinot Noir"
+    },
+    {
+      "name": "Louis Jadot Pinot Noir",
+      "region": "Burgundy",
+      "price_bottle": 62,
+      "type": "Pinot Noir"
+    },
+    {
+      "name": "Bergstrom Reserve Pinot Noir",
+      "region": "Willamette Valley, Oregon",
+      "price_bottle": 120,
+      "type": "Pinot Noir"
+    },
+    {
+      "name": "Rodney Strong Special Select Merlot",
+      "region": "Sonoma",
+      "price_bottle": 49,
+      "type": "Merlot"
+    },
+    {
+      "name": "Duckhorn Merlot",
+      "region": "Napa Valley",
+      "price_bottle": 85,
+      "type": "Merlot"
+    },
+    {
+      "name": "Trivento Golden Reserve Malbec",
+      "region": "Lujan de Cuyo, Mendoza, Argentina",
+      "price_glass": 15,
+      "price_bottle": 60,
+      "type": "Malbec"
+    },
+    {
+      "name": "Tapiz Black Tears Malbec",
+      "region": "Mendoza, Argentina",
+      "price_bottle": 120,
+      "type": "Malbec"
+    }
+  ],
+  "Red Blends": [
+    {
+      "name": "Sullivan Rutherford Estate",
+      "region": "Coeur de Vigne, Napa Valley",
+      "price_bottle": 120,
+      "type": "Red Blend"
+    },
+    {
+      "name": "Caymus-Suisun The Walking Fool",
+      "region": "Suisun Valley",
+      "price_bottle": 81,
+      "type": "Red Blend"
+    },
+    {
+      "name": "J. Lohr Pure Paso",
+      "region": "Paso Robles",
+      "price_bottle": 73,
+      "type": "Red Blend"
+    },
+    {
+      "name": "Marietta Vineyard Christo Red Blend",
+      "region": "North Coast, California",
+      "price_glass": 15,
+      "price_bottle": 60,
+      "type": "Red Blend"
+    }
+  ],
+  "Cabernet Sauvignon": [
+    {
+      "name": "Bonanza Cabernet Sauvignon",
+      "region": "California",
+      "price_glass": 15,
+      "price_bottle": 60,
+      "type": "Cabernet Sauvignon"
+    },
+    {
+      "name": "Austin Cabernet",
+      "region": "Paso Robles, California",
+      "price_glass": 17,
+      "price_bottle": 68,
+      "type": "Cabernet Sauvignon"
+    },
+    {
+      "name": "Caymus Cabernet",
+      "region": "California",
+      "price_glass": 27,
+      "price_bottle": 108,
+      "type": "Cabernet Sauvignon"
+    },
+    {
+      "name": "Caymus Cabernet",
+      "region": "Napa Valley",
+      "price_bottle": 198,
+      "type": "Cabernet Sauvignon"
+    },
+    {
+      "name": "Jayson by Palmeyer Cabernet Sauvignon",
+      "region": "Napa Valley",
+      "price_bottle": 185,
+      "type": "Cabernet Sauvignon"
+    },
+    {
+      "name": "Paul Hobbs Cabernet",
+      "region": "Coombsville, Napa Valley",
+      "price_bottle": 245,
+      "type": "Cabernet Sauvignon"
+    },
+    {
+      "name": "Mullen Road Cellars Cabernet",
+      "region": "Columbia Valley, Washington",
+      "price_bottle": 108,
+      "type": "Cabernet Sauvignon"
+    }
+  ],
+  "Interesting Reds": [
+    {
+      "name": "Numanthia Tinta de Toro Tempranillo",
+      "region": "Spain",
+      "price_bottle": 106,
+      "type": "Tempranillo"
+    },
+    {
+      "name": "Marques de Caceres Rioja Reserva",
+      "region": "Rioja, Spain",
+      "price_bottle": 61,
+      "type": "Rioja"
+    },
+    {
+      "name": "Marques de Caceres Rioja Grand Reserva",
+      "region": "Rioja, Spain",
+      "price_bottle": 98,
+      "type": "Rioja"
+    },
+    {
+      "name": "Ruffino Modus, Sangiovese",
+      "region": "Tuscany, Italy",
+      "price_bottle": 70,
+      "type": "Sangiovese"
+    },
+    {
+      "name": "Tenuta di Nozzole Chianti Classico",
+      "region": "Tuscany, Italy",
+      "price_glass": 16,
+      "price_bottle": 64,
+      "type": "Chianti"
+    },
+    {
+      "name": "Michele Chiarlo Le Orme",
+      "region": "Barbera d' Asti, Italy",
+      "price_bottle": 45,
+      "type": "Barbera"
+    },
+    {
+      "name": "Tutto Mio Sweet Red",
+      "region": "Italy",
+      "price_bottle": 37,
+      "type": "Sweet Red"
+    },
+    {
+      "name": "Caymus-Suisun Gran Durif Syrah",
+      "region": "Suisun Valley, California",
+      "price_bottle": 85,
+      "type": "Syrah"
+    },
+    {
+      "name": "Casisano Brunello di Montalcino",
+      "region": "Tuscany",
+      "price_bottle": 155,
+      "type": "Brunello"
+    },
+    {
+      "name": "Margaux du Chateau Margaux",
+      "region": "Bordeaux, France",
+      "price_bottle": 275,
+      "type": "Bordeaux"
+    }
+  ],
+  "Corkage Policy": {
+    "fee": 25,
+    "note": "For bottles not on our list. Two bottle maximum per party."
+  }
+}

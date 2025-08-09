@@ -1,0 +1,187 @@
+{
+  "Starters": [
+    {
+      "name": "Provoleta Cheese",
+      "price": 18,
+      "description": "Aged Argentinian Provolone, Chimichurri, Oregano Grilled Sourdough"
+    },
+    {
+      "name": "Short Rib Empanada",
+      "price": 22,
+      "description": "Aji Amarillo Crema, Red Chimichurri"
+    },
+    {
+      "name": "Wagyu Meatballs",
+      "price": 22,
+      "description": "Pomodoro, Parmigiano Reggiano, Grilled Polenta"
+    },
+    {
+      "name": "Fried Calamari",
+      "price": 20,
+      "description": "Rhode Island Calamari, Peppadews, Lemon Aioli, Romesco Sauce"
+    },
+    {
+      "name": "Tuna Tartare",
+      "price": 26,
+      "description": "Garlic Ponzu, Avocado, Radish, Cilantro, Plantain Chips"
+    },
+    {
+      "name": "Glazed Brussels Sprouts",
+      "price": 12,
+      "description": "Honey Balsamic, Bacon, Walnuts"
+    },
+    {
+      "name": "Mussels",
+      "price": 18,
+      "description": "White Wine Broth, Fennel, Onions, Garlic, Crushed Pepper, Grilled Crostini"
+    },
+    {
+      "name": "Grilled Octopus",
+      "price": 22,
+      "description": "Macha Sauce, Fingerling Potatoes"
+    },
+    {
+      "name": "Ceviche",
+      "price": 22,
+      "description": "Fresh Local Fish, Aji Amarillo Crema, Cancha Corn, Red Onion, Cilantro, Plantain Chips"
+    }
+  ],
+  "Soups & Salads": [
+    {
+      "name": "Thai Coconut Chicken Soup",
+      "price": 12,
+      "description": "Thai Basil, Mushrooms, Lime, Cilantro & Chili oil"
+    },
+    {
+      "name": "Caesar Salad",
+      "price": 16,
+      "description": "Romaine Hearts, Sourdough Croutons, Parmigiano Reggiano, House Caesar Dressing"
+    },
+    {
+      "name": "Radicchio & Arugula Salad",
+      "price": 20,
+      "description": "Currants, Pecorino Romano, Walnuts, Citrus Vinaigrette"
+    },
+    {
+      "name": "Buratta Salad",
+      "price": 20,
+      "description": "Arugula, Fennel, Heirloom Tomato, Citrus Vinaigrette, Prosciutto Wrapped Crostini"
+    },
+    {
+      "name": "Grilled Chicken",
+      "price": 10,
+      "description": "Add Grilled Chicken to any Salad"
+    },
+    {
+      "name": "Local Gulf Shrimp",
+      "price": 12,
+      "description": "Add Locally Sourced Gulf Shrimp to any Salad"
+    }
+  ],
+  "Main Selections": [
+    {
+      "name": "Local Spear Fish",
+      "price": "Market Price",
+      "description": "Hand-selected fresh catch"
+    },
+    {
+      "name": "Coconut Curry Shrimp",
+      "price": 34,
+      "description": "Forbidden Rice, Wild Mushrooms, Coconut Curry Sauce"
+    },
+    {
+      "name": "Ancho-Rubbed Pork Chop",
+      "price": 36,
+      "description": "Cilantro Butter, Haricot Verts, Parmesan Fingerling Potatoes"
+    },
+    {
+      "name": "JWB Burger",
+      "price": 24,
+      "description": "Custom Blend Burger, Aged Cheddar, Caramelized Onions, Bacon, Bibb Lettuce, House Sauce, Tomato, French Fries"
+    },
+    {
+      "name": "Short Rib Pasta",
+      "price": 38,
+      "description": "Ragout, Sweet Peas, Parmigiano Reggiano, Pappardelle Pasta"
+    },
+    {
+      "name": "Filet Mignon",
+      "price": 56,
+      "description": "Grilled 8oz Center-Cut Filet Mignon, Pomme Purée, Asparagus"
+    },
+    {
+      "name": "Lomo Saltado",
+      "price": 38,
+      "description": "Stir-Fried Wagyu Steak, Soy Sauce, Garlic, Onions, Cilantro, Crispy Yucca"
+    },
+    {
+      "name": "Ribeye",
+      "price": 59,
+      "description": "USDA Prime 14 oz, Haricot Verts, Parmesan Fingerling Potatoes"
+    },
+    {
+      "name": "Chicken Au Jus",
+      "price": 33,
+      "description": "Grilled Broccolini, Fingerling Potatoes, Wild Mushroom"
+    },
+    {
+      "name": "Roasted Cauliflower Cutlet",
+      "price": 32,
+      "description": "Chermoula Marinated, Chimichurri, Turmeric Cream, Raisins, Walnut, Peppadews"
+    },
+    {
+      "name": "Sicilian Sausage Rigatoni",
+      "price": 31,
+      "description": "Broccolini, Almonds, Pomodoro, Currants, Parmigiano"
+    },
+    {
+      "name": "Seafood Stew",
+      "price": 36,
+      "description": "Calamari, Littleneck Clams, Mussels, Shrimp, Fish, Pomodoro, Fregola"
+    },
+    {
+      "name": "Paella",
+      "price": 38,
+      "description": "Shrimp, Mussels, Calamari, Little Neck Clams, Fish, Andouille Sausage, Chicken, Spanish Rice, Vegetables"
+    }
+  ],
+  "Sides": [
+    {
+      "name": "Au Gratin Potatoes",
+      "price": 7,
+      "description": ""
+    },
+    {
+      "name": "Grilled Broccolini",
+      "price": 7,
+      "description": ""
+    },
+    {
+      "name": "Asparagus",
+      "price": 7,
+      "description": ""
+    }
+  ],
+  "Enhancements": [
+    {
+      "name": "Bone Marrow Butter",
+      "price": 7,
+      "description": ""
+    },
+    {
+      "name": "Chimichurri",
+      "price": 7,
+      "description": ""
+    },
+    {
+      "name": "Cognac Peppercorn Sauce",
+      "price": 7,
+      "description": ""
+    },
+    {
+      "name": "Béarnaise Sauce",
+      "price": 7,
+      "description": ""
+    }
+  ]
+}
