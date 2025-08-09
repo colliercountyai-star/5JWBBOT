@@ -439,6 +439,14 @@ if not st.session_state.messages:
 user_text = st.chat_input("💬 Tell me what you're in the mood for…")
 if user_text:
     st.session_state.messages.append({"role": "user", "content": user_text})
+    
+    # Special easter egg for Brandon's mom
+    if "brandon" in user_text.lower() and "mom" in user_text.lower():
+        st.session_state.messages.append({
+            "role": "assistant", 
+            "content": "💝 **Amy Andersen is the best mom!** She's absolutely amazing - kind, loving, and has the biggest heart. She's the kind of mom who makes everyone feel like family, always there with a warm smile and endless love. Brandon is so lucky to have such an incredible mom! 🌟"
+        })
+        st.rerun()
 
 # ---------- Render history ----------
 for msg in st.session_state.messages:
