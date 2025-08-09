@@ -281,10 +281,17 @@ st.markdown(f"""
 </style>
 """, unsafe_allow_html=True)
 
-load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY")
+# Load API key from Streamlit secrets (for cloud) or environment (for local)
+try:
+    api_key = st.secrets["OPENAI_API_KEY"]
+except:
+    load_dotenv()
+    api_key = os.getenv("OPENAI_API_KEY")
+
 if not api_key:
-    st.error("Missing OPENAI_API_KEY in .env")
+    st.error("Missing OPENAI_API_KEY in secrets or .env file")
+    st.stop()
+
 client = OpenAI(api_key=api_key)
 
 
