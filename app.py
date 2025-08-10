@@ -498,8 +498,10 @@ for msg in st.session_state.messages:
         st.markdown(f"""
         <div class="stChatMessage" data-testid="assistant-message">
             <div style="display: flex; align-items: center; gap: 10px; padding: 15px;">
-                <div style="background: #667eea; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
-                    {jimmy_svg}
+                <div style="background: #667eea; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+                        {jimmy_svg}
+                    </div>
                 </div>
                 <div style="flex: 1;">
                     {msg["content"]}
@@ -531,8 +533,10 @@ if st.session_state.messages and st.session_state.messages[-1]["role"] == "user"
             st.markdown(f"""
             <div class="stChatMessage" data-testid="assistant-message">
                 <div style="display: flex; align-items: center; gap: 10px; padding: 15px;">
-                    <div style="background: #667eea; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
-                        {jimmy_svg}
+                    <div style="background: #667eea; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                        <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+                            {jimmy_svg}
+                        </div>
                     </div>
                     <div style="flex: 1;">
                         {reply}
