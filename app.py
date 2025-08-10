@@ -24,20 +24,20 @@ except Exception as e:
     background_url = ""
     print(f"Failed to load background: {e}")
 
-# ---------- Load BUFFET icon for chat messages ----------
+# ---------- Load Jimmy8 icon for chat messages ----------
 try:
-    with open("BUFFET-01.svg", "r", encoding="utf-8") as f:
-        buffet_svg = f.read()
+    with open("jimmy8-01.svg", "r", encoding="utf-8") as f:
+        jimmy_svg = f.read()
     # Clean up SVG content (remove XML declaration and style tags, convert CSS classes to inline styles)
     import re
-    buffet_svg = re.sub(r'<\?xml[^>]*\?>', '', buffet_svg)
-    buffet_svg = re.sub(r'<style[^>]*>.*?</style>', '', buffet_svg, flags=re.DOTALL)
-    buffet_svg = re.sub(r'class="([^"]*)"', 'style="fill: white; width: 24px; height: 24px;"', buffet_svg)
-    buffet_svg = re.sub(r'\s+', ' ', buffet_svg).strip()
-    print("BUFFET icon loaded successfully")
+    jimmy_svg = re.sub(r'<\?xml[^>]*\?>', '', jimmy_svg)
+    jimmy_svg = re.sub(r'<style[^>]*>.*?</style>', '', jimmy_svg, flags=re.DOTALL)
+    jimmy_svg = re.sub(r'class="([^"]*)"', 'style="fill: white; width: 24px; height: 24px;"', jimmy_svg)
+    jimmy_svg = re.sub(r'\s+', ' ', jimmy_svg).strip()
+    print("Jimmy8 icon loaded successfully")
 except Exception as e:
-    buffet_svg = "🍽️"  # Fallback emoji
-    print(f"Failed to load BUFFET icon: {e}")
+    jimmy_svg = "🍽️"  # Fallback emoji
+    print(f"Failed to load Jimmy8 icon: {e}")
 
 # ---------- Custom CSS Styling ----------
 st.markdown(f"""
@@ -499,7 +499,7 @@ for msg in st.session_state.messages:
         <div class="stChatMessage" data-testid="assistant-message">
             <div style="display: flex; align-items: center; gap: 10px; padding: 15px;">
                 <div style="background: #667eea; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
-                    {buffet_svg}
+                    {jimmy_svg}
                 </div>
                 <div style="flex: 1;">
                     {msg["content"]}
@@ -527,12 +527,12 @@ if st.session_state.messages and st.session_state.messages[-1]["role"] == "user"
             except Exception as e:
                 reply = f"Sorry—something went wrong: {e}"
 
-            # Display the AI response with the BUFFET icon
+            # Display the AI response with the Jimmy8 icon
             st.markdown(f"""
             <div class="stChatMessage" data-testid="assistant-message">
                 <div style="display: flex; align-items: center; gap: 10px; padding: 15px;">
                     <div style="background: #667eea; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
-                        {buffet_svg}
+                        {jimmy_svg}
                     </div>
                     <div style="flex: 1;">
                         {reply}
