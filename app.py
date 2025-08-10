@@ -24,6 +24,21 @@ except Exception as e:
     background_url = ""
     print(f"Failed to load background: {e}")
 
+# ---------- Load BUFFET icon for chat messages ----------
+try:
+    with open("BUFFET-01.svg", "r", encoding="utf-8") as f:
+        buffet_svg = f.read()
+    # Clean up SVG content (remove XML declaration and style tags, convert CSS classes to inline styles)
+    import re
+    buffet_svg = re.sub(r'<\?xml[^>]*\?>', '', buffet_svg)
+    buffet_svg = re.sub(r'<style[^>]*>.*?</style>', '', buffet_svg, flags=re.DOTALL)
+    buffet_svg = re.sub(r'class="([^"]*)"', 'style="fill: white; width: 24px; height: 24px;"', buffet_svg)
+    buffet_svg = re.sub(r'\s+', ' ', buffet_svg).strip()
+    print("BUFFET icon loaded successfully")
+except Exception as e:
+    buffet_svg = "🍽️"  # Fallback emoji
+    print(f"Failed to load BUFFET icon: {e}")
+
 # ---------- Custom CSS Styling ----------
 st.markdown(f"""
 <style>
@@ -77,6 +92,22 @@ st.markdown(f"""
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
         animation: slideUp 0.3s ease-out !important;
     }}
+    
+    /* User message styling */
+    .stChatMessage[data-testid="user-message"] {{
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.15)) !important;
+        margin-left: 15% !important;
+        margin-right: 5% !important;
+    }}
+    
+    /* Assistant message styling */
+    .stChatMessage[data-testid="assistant-message"] {{
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)) !important;
+        margin-left: 5% !important;
+        margin-right: 15% !important;
+    }}
+    
+
     
     /* User message styling */
     .stChatMessage[data-testid="user-message"] {{
@@ -450,13 +481,36 @@ if user_text:
 
 # ---------- Render history ----------
 for msg in st.session_state.messages:
-    with st.chat_message(msg["role"]):
-        st.markdown(msg["content"])
+    if msg["role"] == "user":
+        st.markdown(f"""
+        <div class="stChatMessage" data-testid="user-message">
+            <div style="display: flex; align-items: center; gap: 10px; padding: 15px;">
+                <div style="background: #667eea; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                    👤
+                </div>
+                <div style="flex: 1;">
+                    {msg["content"]}
+                </div>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+    else:  # assistant message
+        st.markdown(f"""
+        <div class="stChatMessage" data-testid="assistant-message">
+            <div style="display: flex; align-items: center; gap: 10px; padding: 15px;">
+                <div style="background: #667eea; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                    {buffet_svg}
+                </div>
+                <div style="flex: 1;">
+                    {msg["content"]}
+                </div>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
 
 # ---------- Generate reply ----------
 if st.session_state.messages and st.session_state.messages[-1]["role"] == "user":
-    with st.chat_message("assistant"):
-        with st.spinner("Curating your table…"):
+    with st.spinner("Curating your table…"):
             context_blob = json.dumps(build_context(), ensure_ascii=False)
             messages = [
                 {"role": "system", "content": system_prompt()},
@@ -473,7 +527,19 @@ if st.session_state.messages and st.session_state.messages[-1]["role"] == "user"
             except Exception as e:
                 reply = f"Sorry—something went wrong: {e}"
 
-            st.markdown(reply)
+            # Display the AI response with the BUFFET icon
+            st.markdown(f"""
+            <div class="stChatMessage" data-testid="assistant-message">
+                <div style="display: flex; align-items: center; gap: 10px; padding: 15px;">
+                    <div style="background: #667eea; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                        {buffet_svg}
+                    </div>
+                    <div style="flex: 1;">
+                        {reply}
+                    </div>
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
             st.session_state.messages.append({"role": "assistant", "content": reply})
 
 # Debug data removed for production
